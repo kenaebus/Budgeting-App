@@ -17,6 +17,12 @@
   color: #61dafb;
 }
 
+
+#gold {
+  color: #deb342;
+  font-family: 'Black Chancery';
+}
+
 @font-face {
   font-family: 'Vollkorn', serif;
   src: url(Vollkorn/Vollkorn-Regular.ttf);
@@ -24,7 +30,8 @@
 }
 .vollkorn{
   font-family: 'Vollkorn';
-  font-size: 50px;
+  font-size: 45px;
+  
 }
 
 @font-face {
@@ -34,5 +41,11 @@
 
 .raleway{
   font-family:'Raleway';
-  font-size: 20px;
+  font-size: 25px;
 }
+
+@font-face {
+  font-family: 'Black Chancery',serif;
+  src: url(BlackChancery/blackchancery.regular.ttf);
+}
+

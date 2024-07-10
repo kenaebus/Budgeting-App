@@ -4,8 +4,13 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const path = require('path');
 const connectDB = require('./config/db');
+const expenseRoutes = require('./routes/expenseRoutes');
 
+
+//Load Enviornment Variables
 dotenv.config();
+
+// Connect to database
 connectDB();
 
 const app = express();
@@ -13,6 +18,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use('/api/expenses',require('./routes/expenseRoutes'));
 
 // Connect to REACT App 
 app.use(express.static(path.join(__dirname, '../build')));

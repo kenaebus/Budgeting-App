@@ -1,9 +1,15 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const connectDB = async() => {
     try {
-        await mongoose.connect(process.env.MONGO_URI, {
-
+        const uri= process.env.MONGO_URI;
+        if (!uri) {
+            throw new Error("MONGO_URI is not defined");
+        }
+        await mongoose.connect(uri, {
         });
         console.log('MongoDB connected');
     } catch (err) {
@@ -11,5 +17,8 @@ const connectDB = async() => {
         process.exit(1);
     }
 };
+
+
+console.log("Mongo URI:", process.env.MONGO_URI);
 
 module.exports = connectDB;
