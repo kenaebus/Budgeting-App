@@ -1,30 +1,43 @@
 <div align = "center">
   <img src = "https://github.com/kenaebus/Budgeting-App/blob/main/images/logo.png" width="200">
   <h1>Budgeting App</h1>
+  <p>Description</p>
 </div>
 
 <details open>
   <summary>Table of Contents</summary>
 
   <ol>
-    <li>About The Project
+    <li>
+        <a href="#about_the_project">About The Project</a>
+    </li>
       <ul>
-        <li>Built With</li>
+        <li><a href="#built_with">Built With</a></li>
       </ul>
     </li>
-    <li>Getting Started</li>
+    <li>
+      <a href="#getting_started">Getting Started</a>
+    </li>
       <ul>
-        <li>Prerequisites</li>
-        <li>Installation</li>
+        <li>
+          <a href="#prerequisites">Prerequisites</a>
+        </li>
+        <li>
+          <a href="#installation">Installation</a>
+        </li>
       </ul>
-    <li>Usage</li>
-    <li>Contact</li>
+    <li>
+      <a href="#usage">Usage</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
   </ol>
 </details>
 
-## About The Project
+<h2><a href="#about_the_project">About The Project</a></h2>
  
-## Built With
+<h2><a href="#built_with">Built With</a></h2>
   <ul>
     <li>
       <a href="https://react.dev/">
@@ -40,9 +53,9 @@
     </li>
   </ul>
 
-  ## Getting Started
+<h2><a href="#getting_started">Getting Started</a></h2>
 
-  ## Prerequistes
+<h2><a href="#prerequisites">Prerequistes</a></h2>
 This project uses many frameworks and NPMs. Use <a href="https://nodejs.org/en">npm</a> to install these packages
 <ul>
 <li>Express</li>
@@ -80,6 +93,6 @@ npm install cors
 ```bash
 npm install body-parser
 ```
-  ## Installation
+<h2><a href="#installation">Installation</a></h2>
 
-## Contact
+<h2><a href="#contact">Contact</a></h2>
