@@ -5,7 +5,7 @@ const cors = require('cors');
 const path = require('path');
 const connectDB = require('./config/db');
 const expenseRoutes = require('./routes/expenseRoutes');
-
+const incomeRoutes = require('./routes/incomeRoutes');
 
 //Load Enviornment Variables
 dotenv.config();
@@ -15,10 +15,17 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: 'http://localhost:3000',
+    }
+));
+
 app.use(bodyParser.json());
 
+
 app.use('/expenses',require('./routes/expenseRoutes'));
+app.use('/incomes',require('./routes/incomeRoutes'));
 
 // Connect to REACT App 
 app.use(express.static(path.join(__dirname, '../build')));
