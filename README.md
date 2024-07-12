@@ -65,7 +65,7 @@ This project uses many frameworks and NPMs. Use <a href="https://nodejs.org/en">
 npm install express
 ```
 <ul>
-<li>dotenv/li>
+<li>dotenv</li>
 </ul>
 
 ```bash
