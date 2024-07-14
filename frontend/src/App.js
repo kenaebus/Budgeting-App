@@ -1,6 +1,7 @@
 import React from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, Link} from 'react-router-dom';
 import Expenses from './components/Expenses';
+
 //Styles
 import './App.css';
 
@@ -14,17 +15,21 @@ function App() {
         <div className="vollkorn">Control your <span id='gold'>Growth</span></div>
         <div className="raleway">Your <span id="gold">Life</span></div>
       
+        <nav>
+          <ul>
+            <li>
+              <Link to ="/">Home</Link>
+              <Link to="/Expenses">Login</Link>
+            </li>
+          </ul>
+        </nav>
+
       </header>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/Expenses">Login</Link>
-        </li>
-      </ul>
-    </nav>
+   
     <Routes>
-      <Route path="/Expenses" element={<expenseRoutes/>} />
+      <Route path="/" element={<App />} />
+      <Route path="/Expenses" element={<Expenses/>} />
     </Routes>
     </>
   );
