@@ -40,16 +40,20 @@
 <h2><a href="#built_with">Built With</a></h2>
   <ul>
     <li>
-      <a href="https://react.dev/">
-      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+      <a href = "https://www.mongodb.com/">
+      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
     </li>
     <li>
       <a href = "https://expressjs.com/">
       <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
     </li>
     <li>
-      <a href = "https://www.mongodb.com/">
-      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+      <a href="https://react.dev/">
+      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+    </li>
+    <li>
+      <a href = "https://nodejs.org/en"/>
+      <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
     </li>
   </ul>
 
@@ -65,7 +69,7 @@ This project uses many frameworks and NPMs. Use <a href="https://nodejs.org/en">
 npm install express
 ```
 <ul>
-<li>dotenv/li>
+<li>dotenv</li>
 </ul>
 
 ```bash
