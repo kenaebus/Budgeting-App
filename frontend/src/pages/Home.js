@@ -11,7 +11,7 @@ function Home() {
             <img src={require("./images/logo.png")} className="AppLogo" alt="logo"/>
             <div className="vollkorn">Control your <span id='gold'>Growth</span></div>
             <div className="raleway">Your <span id="gold">Life</span></div>
-            <Link to = "/Expenses" />
+            <Link to = "/Dashboard">Dashboard</Link>
     
           </header>
         </div>

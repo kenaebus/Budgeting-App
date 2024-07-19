@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+import {FinanceForm} from '../components/FinanceForm';
 
 function Expenses() {
     return (
-        <div className="Home">
+        <div className="Expenses">
             <h1>Expenses</h1>
+            <FinanceForm></FinanceForm>
         </div>
     );
 };
