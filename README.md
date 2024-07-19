@@ -81,22 +81,7 @@ npm install dotenv
 
 ```bash
 npm install mongoose
-```
-<ul>
-<li>cors</li>
-</ul>
-
-```bash
-npm install cors
-```
-
-<ul>
-<li>body-parser</li>
-</ul>
-
-```bash
-npm install body-parser
-```
+```                       
 <h2><a href="#installation">Installation</a></h2>
 
 <h2><a href="#contact">Contact</a></h2>
