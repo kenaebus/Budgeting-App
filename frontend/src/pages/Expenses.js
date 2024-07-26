@@ -3,7 +3,6 @@ import {ExpenseFinanceForm} from '../components/ExpenseFinanceForm';
 import axios from 'axios';
 
 function Expenses() {
-
     const addExpense = async (expense) => {
         try {
             const response = await axios.post('http://localhost:5000/expenses', expense);
@@ -17,7 +16,6 @@ function Expenses() {
         <div className="Expenses">
             <h1>Expenses</h1>
             <ExpenseFinanceForm onSubmit={addExpense}></ExpenseFinanceForm>
-
         </div>
     );
 };

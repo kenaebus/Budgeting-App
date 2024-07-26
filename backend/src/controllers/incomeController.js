@@ -18,7 +18,7 @@ exports.addIncome = async (req, res) => {
     };
 
     try {
-        const income = new Expense({
+        const income = new Income({
             description,
             amount,
             category
