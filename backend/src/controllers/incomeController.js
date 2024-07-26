@@ -1,4 +1,5 @@
 const Income = require('../models/income');
+const categories = require('../config/IncomeCategories');
 
 exports.getIncomes = async (req,res) => {
     try {
@@ -10,14 +11,19 @@ exports.getIncomes = async (req,res) => {
 };
 
 exports.addIncome = async (req, res) => {
-    const income = new Income({
-        description: req.body.description,
-        amount: req.body.amount,
-        category: req.body.category
+    const { description, amount, category } = req.body;
 
-    });
+    if (!categories.includes(category)) {
+        return res.status(400).json({message: "Invalid Category"});
+    };
 
     try {
+        const income = new Expense({
+            description,
+            amount,
+            category
+        });
+
         const newIncome = await income.save();
         res.status(201).json(newIncome);
     } catch (err) {
