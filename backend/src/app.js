@@ -18,6 +18,16 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/expenses',expenseRoutes);
 
+// Route for getting Books from database
+app.get('/expenses', async (request, response) => {
+    try {
+        const expenses = await Expenses.find({});
+    } catch (error) {
+        console.log(error.message);
+        response.status(500).send({message: error.message});
+    }
+});
+
 // Connect to REACT App 
 app.use(express.static(path.join(__dirname, '../build')));
 

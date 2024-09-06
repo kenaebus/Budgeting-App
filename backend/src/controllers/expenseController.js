@@ -1,8 +1,6 @@
 const Expense = require('../models/expense');
 const categories = require('../config/ExpenseCategories');
 
-console.log(typeof Expense);
-
 exports.getExpenses = async (req,res) => {
     try {
         const expenses = await Expense.find();
@@ -34,5 +32,19 @@ exports.addExpense = async (req, res) => {
 };
 
 exports.deleteExpenses = async(req,res) => {
+    try {
+        const expense = await Expense.findById(req.params.id);
+        if (expense == null ) {
+            return res.status(404).json({message: 'Cannot find expense'});
+        }
+
+        await expense.remove();
+        res.json({message: "Deleted Expense"});
+    } catch (err) {
+        res.status(500).json({message: err.message});
+    }
+};
+
+exports.editExpenses = async(req, res) => {
     FIXME: UNFINISHED
 };
