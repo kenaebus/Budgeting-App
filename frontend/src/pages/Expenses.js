@@ -15,7 +15,6 @@ function Expenses() {
             .catch((error) => {
                 console.log(error);
             });
-
     },[]);
 
     const handleAddExpense = async (expense) => {
@@ -32,9 +31,9 @@ function Expenses() {
             <h1>Expenses</h1>
             <ExpenseFinanceForm onSubmit={handleAddExpense}></ExpenseFinanceForm>
             
-            <table idName="expenseTable">
+            <table idname="expenseTable">
                 <tbody>
-                {expenses?.map((expense,index) => (
+                {expenses.map((expense,index) => (
                      <tr key={expense.id}>
                         <td>
                             {expense.date}
@@ -47,6 +46,10 @@ function Expenses() {
                         </td>
                         <td>
                             {expense.category}
+                        </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
                         </td>
                      </tr>
                 ))}  

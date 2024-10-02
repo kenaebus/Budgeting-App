@@ -1,25 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Dashboard.css';
 
 
 function Dashboard() {
     return (
     <>
         <div className="Dashboard">
-             <div class = "header">
-                <div class="logo">
-                <span class="logo-icon">
+             <div className= "header">
+                <div className="logo">
+                <span className="logo-icon">
                     <img alt="logo-img"></img> {/**IMPORTANT ADD IMG */}
                     </span>
-                    <h1 class = "logo-title">
+                    <h1 className = "logo-title">
                         <span>Dashboard</span> {/**INSERT TITLE HERE */}
                     </h1>
                 </div>
              </div>
 
-             <div class="dashboard-header-actions">
-                <button class="user-profile">
+             <div className="dashboard-header-actions">
+                <button className="user-profile">
                     <span>John Doe</span>
                     <span>
                         <img alt="user-photo" /> {/**IMPORTANT ADD IMG */}
@@ -27,9 +26,9 @@ function Dashboard() {
                 </button>
             </div>
 
-            <div class ="dashboard-body">
-                <div class="dashboard-body-navigation">
-                <nav class="navigation">
+            <div className ="dashboard-body">
+                <div className="dashboard-body-navigation">
+                <nav className="navigation">
                     <Link to = "/Dashboard">Dashboard</Link>
                     <br/>
                     <Link to = "/Expenses">Expenses</Link>
@@ -37,34 +36,27 @@ function Dashboard() {
                     <Link to = "/Incomes">Incomes</Link>
                 </nav>
 
-                <footer class="footer">
-                    <div>
-                        Test
-                    </div>
-                </footer>
-            </div>
-            </div>
-            <div class="dashboard-body-main-content">
-                <section class="dashboard-section">
+                <div className="dashboard-body-main-content">
+                <section className="dashboard-section">
                 <h2>Overview</h2>
                 </section>
-                <div class="tiles">
-                    <article class="tile">
-                        <div class="tile-header">
+                <div className="tiles">
+                    <article className="tile">
+                        <div className="tile-header">
                             <h3>
                                 <span>Net Worth</span>
                             </h3>
                         </div>
                     </article>
-                    <article class="tile">
-                        <div class="tile-header">
+                    <article className="tile">
+                        <div className="tile-header">
                             <h3>
                                 <span>Budget</span>
                             </h3>
                         </div>
                     </article>
-                    <article class="tile">
-                        <div class="tile-header">
+                    <article className="tile">
+                        <div className="tile-header">
                             <h3>
                                 <span>Spending</span>
                             </h3>
@@ -73,10 +65,19 @@ function Dashboard() {
                 </div>
             </div>
 
+                <footer className="footer">
+                    <div>
+                        Footer
+                    </div>
+                </footer>
+            </div>
+            </div>
+
         </div>    
       
     </>
     );
 };
+
 
 export default Dashboard;

@@ -1,24 +1,25 @@
-.App {
-  text-align: center;
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    ".index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    colors: {
+      'gold': '#CBB681',
+      'dark-grey': '#191919',
+      'grey': '#232D34',
+      'grey-blue': '#232D34',
+    },
+    fontFamily: {
+
+    }
+  },
+  plugins: [],
 }
 
-.App-header {
-  background-color: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-
-#gold {
+/**gold {
   color: #deb342;
   font-family: 'Black Chancery';
 }
@@ -48,4 +49,5 @@
   font-family: 'Black Chancery',serif;
   src: url(BlackChancery/blackchancery.regular.ttf);
 }
+ */
 
