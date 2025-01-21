@@ -16,7 +16,6 @@ export const ExpenseFinanceForm = ({onSubmit}) => {
     const [amount, setAmount] = useState('');
     const [category, setCategory] = useState(categories[0]);
     
-
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit({ description, amount, category });

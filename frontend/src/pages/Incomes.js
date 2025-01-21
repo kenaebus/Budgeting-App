@@ -47,6 +47,10 @@ function Incomes() {
                         <td>
                             {income.category}
                         </td>
+                        <td>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
                      </tr>
                 ))}  
                 </tbody>

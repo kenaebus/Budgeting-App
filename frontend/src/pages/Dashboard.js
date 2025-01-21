@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DashboardMain from '../components/DashboardMain';
 
 
 function Dashboard() {
     return (
     <>
+        <DashboardMain/>
         <div className="Dashboard">
              <div className= "header">
                 <div className="logo">
@@ -31,9 +33,6 @@ function Dashboard() {
                 <nav className="navigation">
                     <Link to = "/Dashboard">Dashboard</Link>
                     <br/>
-                    <Link to = "/Expenses">Expenses</Link>
-                    <br/>
-                    <Link to = "/Incomes">Incomes</Link>
                 </nav>
 
                 <div className="dashboard-body-main-content">

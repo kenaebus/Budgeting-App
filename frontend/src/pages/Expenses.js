@@ -55,7 +55,6 @@ function Expenses() {
                 ))}  
                 </tbody>
             </table>
-
         </div>    
     );
 };

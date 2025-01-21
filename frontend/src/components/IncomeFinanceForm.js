@@ -20,7 +20,6 @@ export const IncomeFinanceForm = ({onSubmit}) => {
         setCategory(categories[0]);
     };
 
-
     return(
         <div className="form-container">
             <form onSubmit={handleSubmit}>

@@ -48,7 +48,7 @@ app.delete('/expenses/:id', async (request, response) => {
     }
 });
 
-// Route for getting Expenses from database
+// Route for getting Incomes from database
 app.get('/incomes', async (request, response) => {
     try {
         const incomes = await Incomes.find({});
